@@ -1,6 +1,6 @@
 <?php
 
-namespace Uepg\LaravelSybase\Database\Query;
+namespace Hunaepi\LaravelSybase\Database\Query;
 
 use Illuminate\Database\Query\Processors\SqlServerProcessor;
 

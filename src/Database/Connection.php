@@ -1,6 +1,6 @@
 <?php
 
-namespace Uepg\LaravelSybase\Database;
+namespace Hunaepi\LaravelSybase\Database;
 
 use Closure;
 use Doctrine\DBAL\Driver\PDOSqlsrv\Driver as DoctrineDriver;
@@ -8,10 +8,10 @@ use Exception;
 use Illuminate\Database\Connection as IlluminateConnection;
 use Illuminate\Database\Query\Builder;
 use PDO;
-use Uepg\LaravelSybase\Database\Query\Grammar as QueryGrammar;
-use Uepg\LaravelSybase\Database\Query\Processor;
-use Uepg\LaravelSybase\Database\Schema\Blueprint;
-use Uepg\LaravelSybase\Database\Schema\Grammar as SchemaGrammar;
+use Hunaepi\LaravelSybase\Database\Query\Grammar as QueryGrammar;
+use Hunaepi\LaravelSybase\Database\Query\Processor;
+use Hunaepi\LaravelSybase\Database\Schema\Blueprint;
+use Hunaepi\LaravelSybase\Database\Schema\Grammar as SchemaGrammar;
 
 class Connection extends IlluminateConnection
 {
@@ -78,7 +78,7 @@ class Connection extends IlluminateConnection
     /**
      * Get the default query grammar instance.
      *
-     * @return \Uepg\LaravelSybase\Database\Query\Grammar
+     * @return \Hunaepi\LaravelSybase\Database\Query\Grammar
      */
     protected function getDefaultQueryGrammar()
     {
@@ -88,7 +88,7 @@ class Connection extends IlluminateConnection
     /**
      * Get the default schema grammar instance.
      *
-     * @return \Uepg\LaravelSybase\Database\Schema\Grammar
+     * @return \Hunaepi\LaravelSybase\Database\Schema\Grammar
      */
     protected function getDefaultSchemaGrammar()
     {
@@ -98,7 +98,7 @@ class Connection extends IlluminateConnection
     /**
      * Get the default post processor instance.
      *
-     * @return \Uepg\LaravelSybase\Database\Query\Processor
+     * @return \Hunaepi\LaravelSybase\Database\Query\Processor
      */
     protected function getDefaultPostProcessor()
     {
@@ -581,7 +581,7 @@ class Connection extends IlluminateConnection
      * @param  int  $offset
      * @param  string  $query
      * @param  array  $bindings
-     * @param  \Uepg\LaravelSybase\Database\Connection  $me
+     * @param  \Hunaepi\LaravelSybase\Database\Connection  $me
      * @return string
      */
     public function compileOffset($offset, $query, $bindings = [], $me)
