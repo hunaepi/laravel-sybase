@@ -16,7 +16,7 @@ class SybaseServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        IlluminateConnection::resolverFor('sqlsrv', function (
+        IlluminateConnection::resolverFor('sqlanywhere', function (
             $connection,
             $database,
             $prefix,
@@ -30,7 +30,7 @@ class SybaseServiceProvider extends ServiceProvider
             );
         });
 
-        $this->app->bind('db.connector.sqlsrv', function ($app) {
+        $this->app->bind('db.connector.sqlanywhere', function ($app) {
             return new Connector();
         });
 

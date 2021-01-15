@@ -263,7 +263,7 @@ class Connection extends IlluminateConnection
      */
     private function queryStringForSelect($tables)
     {
-        $explicitDB = explode('..', $tables);
+        $explicitDB = explode('.', $tables);
 
         if (isset($explicitDB[1])) {
             return "
@@ -272,10 +272,10 @@ class Connection extends IlluminateConnection
                     b.name AS customtype,
                     st.name AS type
                 FROM
-                    {$explicitDB[0]}..syscolumns a,
-                    {$explicitDB[0]}..systypes b,
-                    {$explicitDB[0]}..systypes s,
-                    {$explicitDB[0]}..systypes st
+                    dbo.syscolumns a,
+                    systypes b,
+                    systypes s,
+                    systypes st
                 WHERE
                     a.usertype = b.usertype AND
                     s.usertype = a.usertype AND
@@ -298,7 +298,7 @@ class Connection extends IlluminateConnection
                     a.name,
                     st.name AS type
                 FROM
-                    syscolumns a,
+                    dbo.syscolumns a,
                     systypes b,
                     systypes s,
                     systypes st
