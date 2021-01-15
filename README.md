@@ -56,8 +56,8 @@ return [
     'connections' => [
         ...
 
-        'sybase' => [
-            'driver' => 'sqlsrv',
+        'sqlanywhere' => [
+            'driver' => 'sqlanywhere',
             'host' => env('DB_HOST', 'sybase.myserver.com'),
             'port' => env('DB_PORT', '5000'),
             'database' => env('DB_DATABASE', 'mydatabase'),
