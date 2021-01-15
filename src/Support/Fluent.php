@@ -1,6 +1,6 @@
 <?php
 
-namespace Hunaepi\LaravelSybase\Support;
+namespace Uepg\LaravelSybase\Support;
 
 use Illuminate\Support\Fluent as IlluminateFluent;
 

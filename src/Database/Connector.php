@@ -1,6 +1,6 @@
 <?php
 
-namespace Hunaepi\LaravelSybase\Database;
+namespace Uepg\LaravelSybase\Database;
 
 use Illuminate\Database\Connectors\SqlServerConnector;
 

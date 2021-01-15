@@ -1,6 +1,6 @@
 <?php
 
-namespace Hunaepi\LaravelSybase\Database\Schema;
+namespace Uepg\LaravelSybase\Database\Schema;
 
 use Illuminate\Database\Schema\Blueprint as IlluminateBlueprint;
 

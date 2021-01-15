@@ -1,9 +1,9 @@
 <?php
 
-namespace Hunaepi\LaravelSybase\Database\Schema;
+namespace Uepg\LaravelSybase\Database\Schema;
 
 use Illuminate\Database\Schema\Grammars\Grammar as IlluminateGrammar;
-use Hunaepi\LaravelSybase\Support\Fluent;
+use Uepg\LaravelSybase\Support\Fluent;
 
 class Grammar extends IlluminateGrammar
 {
