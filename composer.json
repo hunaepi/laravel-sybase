@@ -1,12 +1,11 @@
 {
-    "name": "uepg/laravel-sybase",
+    "name": "hunaepi/laravel-sybase",
     "description": "Sybase based Eloquent module extension for Laravel 5.x.",
     "keywords": [
         "sybase"
     ],
     "license": "GPL-2.0-only",
-    "authors": [
-        {
+    "authors": [{
             "name": "Gabriel Tadra Mainginski",
             "email": "13179626@uepg.br"
         },
@@ -28,16 +27,16 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Uepg\\LaravelSybase\\SybaseServiceProvider"
+                "Hunaepi\\LaravelSybase\\SybaseServiceProvider"
             ],
             "aliases": {
-                "UepgBlueprint": "Uepg\\LaravelSybase\\Database\\Schema\\Blueprint"
+                "UepgBlueprint": "Hunaepi\\LaravelSybase\\Database\\Schema\\Blueprint"
             }
         }
     },
     "autoload": {
         "psr-4": {
-            "Uepg\\LaravelSybase\\": "src/"
+            "Hunaepi\\LaravelSybase\\": "src/"
         }
     }
 }
